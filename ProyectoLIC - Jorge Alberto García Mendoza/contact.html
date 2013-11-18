@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Sugerencias</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/formulario.js">
+</script>
+<script type="text/javascript">
+// <![CDATA[
+jQuery(document).ready(function(){
+	$('#contactform').submit(function(){				  
+		var action = $(this).attr('action');
+		$.post(action, { 
+			name: $('#name').val(),
+			email: $('#email').val(),
+			company: $('#company').val(),
+			subject: $('#subject').val(),
+			message: $('#message').val()
+		},
+			function(data){
+				$('#contactform #submit').attr('disabled','');
+				$('.response').remove();
+				$('#contactform').before('<p class="response">'+data+'</p>');
+				$('.response').slideDown();
+				if(data=='Message sent!') $('#contactform').slideUp();
+			}
+		); 
+		return false;
+	});
+});
+// ]]>
+</script>
+</head>
+<body>
+<div class="main2">
+  <div class="header">
+    <div class="block_header">
+      <div class="logo"><a href="index.html"><img src="images/logo.gif" width="244" height="109" border="0" alt="logo" /></a></div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="portfolio.html">Comida T&iacute;pica</a></li>
+          <li><a href="about.html" >Informaci&oacute;n personal</a></li>
+          <li><a href="contact.html" class="active">Sugerencias</a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="body_resize">
+      <div class="upblog2">
+        <h2>Sugerencias</h2>
+        <div class="blog2">
+          <div class="second">
+            <p><span>Tu sugerencia es muy importante para nosotros.</span></p>
+            <p>Por eso, quisieramos que llenaras la siguiente información que se pide a continuacion, llenandola con campos que son fundamental para que así, puedas saber nuestras nuevas actualizaciones, referentes a las comidas tipicas.</p>
+            <h3>Formulario</h3>
+            <div class="blog">
+              <p><span>Por favor, llena todo el formulario.</span></p>
+              <p>NOTA: El formulario que contenga (*) es un campo obligatorio. </p>
+              
+              <form id="frm1">
+<div>
+Nombre *:<br />
+<input name="nombre" type="text" value="" id="nombre"/><p>
+</div>
+<div>
+Email *:<br />
+<input name="email" type="text" value="" id="email"/><p>
+</div>
+<div>
+Pais *:<br />
+<input name="pais" type="text" value="" id="pais"/><p>
+</div>
+<div>
+Asunto *:<br />
+<input name="asunto" type="text" value="" id="asunto"/><p>
+</div>
+<div>
+Mensaje *:<br />
+<textarea name="mensaje" value="" id="mensaje" ></textarea>
+<p>
+</div>
+<input name="Pedir consulta" type="button" onclick="regular();" value="Enviar Sugerencia" id="evaluar" />
+</p>
+<form/>
+              
+              <div class="clr"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="upblog">
+        <h2>Información de contacto</h2>
+        <div class="blog">
+          <div class="second">
+            <p><span>Tel: +123456789<br />
+              Fax: +123456789<br />
+              Email: jorgetorres1995@hotmail.com</span></p>
+            <div class="bg"></div>
+            <a href="https://www.facebook.com/pages/Viva-Nicaragua/217576421615369"><center>
+              <img src="images/fb.gif" alt="picture" width="128" height="102" border="0" />
+            </center></a>
+            <p>&nbsp;</p>
+            <div class="clr"></div>
+          </div>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="footer">
+    <div class="resize">
+      <div>
+        <p class="footer_logo"><a href="#"><img src="images/footer_logo.gif" alt="picture" width="177" height="43" border="0" /></a></p>
+        <p>3° Informática III &copy; Jorge Alberto Garc&iacute;a Mendoza. Lenguaje Interpretado por el Cliente<br />
+          <a href="contact.html">Informaci&oacute;n Personal</a> | <a href="contact.html">Sugerencia</a></p>
+      </div>
+    </div>
+    <p class="clr"></p>
+  </div>
+</div>
+</body>
+</html>

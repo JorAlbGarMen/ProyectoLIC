@@ -1,0 +1,87 @@
+@charset "utf-8";
+body { margin:0; padding:0; width:100%; }
+html { padding:0; margin:0;}
+
+/* main */
+.main {width:100%; padding:0; margin:0 auto; background:#f9f6ea url(images/main_bg.jpg) top repeat-x; }
+.main2 {width:100%; padding:0; margin:0 auto; background:#f9f6ea url(images/main_bg2.jpg) top repeat-x; }
+.resize { width:980px; margin:0 auto;}
+
+/********** header **********/
+.header { }
+
+.block_header {margin:0 auto; width:979px;}
+/* logo */
+.logo { float:left; padding:0; margin:0; width:244px;}
+/* menu */	
+.menu { padding:0; margin:30px 0 0 0; width:550px; float:right; height:40px;}
+.menu ul { padding:0; margin:0; list-style:none; border:0; float:right;}
+.menu ul li { float:left; margin:0; padding:0 3px; border:0;}
+.menu ul li a { float:left; margin:0 1px 0 0; padding:14px 14px; color:#fff; font:bold 11px Arial, Helvetica, sans-serif; text-decoration:none;}
+.menu ul li a:hover { color:#ffc600; text-decoration:underline;}
+.menu ul li a.active { color:#ffc600; text-decoration:underline;}
+/********** slider **********/
+.slider { margin:0 auto 30px auto; padding:0;}
+/* header_text */
+.header_text { margin:0 auto; width:978px; padding:0;}
+.header_text .div {width:978px; margin:0; padding:0; background:#000; border:1px solid #446365;}
+.header_text .div .left1 { float:left; width:350px;}
+.header_text span { float:right; margin:0; padding:0; width:300px;}
+.header_text h2 { font:bold 36px Arial, Helvetica, sans-serif; color:#fff; padding:20px 0 20px 20px; margin:0; line-height:1.2em;}
+.header_text p { font:normal 12px Arial, Helvetica, sans-serif; color:#fff; padding:10px 0 0 20px; margin:0; line-height:1.6em;}
+.header_text a { font:bold 12px Arial, Helvetica, sans-serif; color:#40777a; text-decoration:none;}
+.header_text ul.buttons { float:left; padding:20px 0 10px 25px; margin:0; list-style:none;}
+.header_text ul.buttons li { float:left; padding:0 5px; margin:0;}
+
+/********** block index **********/
+.body { padding:0; margin:0;}
+.body_resize { width:978px; margin:0 auto; padding:0; border:1px solid #eeeadc; background:#fff;}
+.body h2 { font:bold 20px Arial, Helvetica, sans-serif; color:#000; padding:15px 0 15px 20px; margin:0;}
+.body h3 { font:bold 36px Arial, Helvetica, sans-serif; color:#656565; border-bottom:1px solid #eaeaea; padding:10px 5px; margin:5px 0;}
+.body a { font:bold 11px Arial, Helvetica, sans-serif; color:#327b7f;text-decoration:none;}
+.body p {font:normal 11px Arial, Helvetica, sans-serif; color:#656565; line-height:1.8em; padding:5px; margin:0;}
+.body p.gray { color:#8d8d8d;}
+.body span { font:bold 11px Arial, Helvetica, sans-serif; color:#656565; text-transform:uppercase; line-height:1.8em;}
+.body em { font:italic 11px Arial, Helvetica, sans-serif; color:#327b7f;}
+.upblog {width:320px; float:left; padding:0 0 0 4px;}
+.upblog2 {width:644px; float:left; padding:0 0 0 4px;}
+.blog, .blog2 { padding:5px; margin:5px; border:1px solid #ececec; background:#fdfbf1;}
+.blog img { float:left; margin:5px auto; padding:0;}
+.upblog2 .img { float:right; margin:0; padding:5px 10px; background:#FFF;}
+.blog div.second, .blog2 div.second { border:1px solid #ececec; background:#fff; padding:10px 5px;}
+
+.banners p { padding:0; margin:0;}
+.banners img { float:none;}
+
+/*bottomms*/
+.bottomms { width:180px; float:left; margin:10px 10px; padding:5px 0;}
+.bottomms a { font:bold 14px Arial, Helvetica, sans-serif; color:#656565; background:#fdfbf1; border:1px solid #ded9ca; padding:5px 7px; margin:0 0 0 5px; text-decoration:none;}
+.bottomms a:hover { text-decoration:none; background:#f0ede0;}
+/*serv*/
+.serv { width:270px; float:left; margin:5px 5px; padding:0;}
+.serv img { float:left; margin:5px 5px 80px 5px; padding:0;}
+ .serv h2 { font: normal 18px Arial, Helvetica, sans-serif; color:#656565; border-bottom:1px solid #eaeaea; padding:5px 5px; margin:0;}
+/********** contact form **********/
+#contactform { margin:0; padding:5px 10px;}
+#contactform * { color:#8d8d8d;}
+#contactform ol { margin:0; padding:0; list-style:none;}
+#contactform li { margin:0; padding:0; background:none; border:none; display:block;}
+#contactform li.buttons { margin:5px 0 5px 0;}
+#contactform label { margin:0; width:120px; display:block; padding:5px 0; font:bold 11px Arial, Helvetica, sans-serif; color:#656565; text-transform:uppercase; float:left;}
+#contactform label span { display:block; font:normal 10px Arial, Helvetica, sans-serif; text-transform:lowercase;}
+#contactform input.text { width:400px; border:1px solid #dedede; margin:5px 0; padding:5px 2px; height:16px; background:#fff; float:left;}
+#contactform textarea { width:400px; border:1px solid #dedede; margin:10px 0; padding:2px; background:#fff; float:left;}
+#contactform li.buttons input { padding:3px 0; margin:0 0 0 110px; border:0; color:#FFF;}
+p.response { text-align:center; color:#2c2c2c; font: bold 11px Arial, Helvetica, sans-serif; line-height:1.8em; width:auto;}
+
+/********** footer **********/
+.footer { padding:20px 0; margin:0 auto; background:#f9f6ea url(images/footer_bg.gif) left repeat-x; }
+.footer .resize p.footer_logo { float:left; padding:0; margin:0 10px; }
+.footer .resize div { width:970px; color:#656565; font:normal 11px Arial, Helvetica, sans-serif; text-align: left; margin:0 auto; }
+.footer .resize div p { padding:0; margin:0; float:right; }
+.footer .resize div img { float:left; }
+.footer .resize div a { color:#656565; font:normal 11px Arial, Helvetica, sans-serif; padding:0 1px; }
+.text_left { text-align: right; }
+
+p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
+li.bg, .bg { clear:both; border:0; border-bottom:1px solid #eaeaea; padding:5px 0 0 0; margin:0 0 5px 0; background:none;}
